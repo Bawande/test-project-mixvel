@@ -1,0 +1,17 @@
+<article class="ticket --@@type">
+  <div class="ticket__content">
+    <!-- prettier-ignore -->
+    @@if (type === 'there') {
+      @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-there.json")
+    }
+
+    <!-- prettier-ignore -->
+    @@if (type === 'back') {
+      @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-back.json")
+    }
+  </div>
+  <div class="ticket__side column-side">
+    <!-- prettier-ignore -->
+    @@include('src\components\booking\parts\column-side.html')
+  </div>
+</article>

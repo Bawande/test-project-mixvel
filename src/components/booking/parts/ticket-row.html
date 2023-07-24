@@ -1,0 +1,123 @@
+<div class="ticket__row @@if ( total === true ) { --last }">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">@@flight</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <img src="@@carrier.path" alt="@@carrier.label" />
+    </div>
+
+    <div class="column-carrier__model">@@model</div>
+
+    <!-- prettier-ignore -->
+    @@if ( total === false) {
+    <div class="column-carrier__docking">
+      Стыковка
+      <span>@@flight-time</span>
+    </div>
+    }
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">@@departure-info.code</span>
+
+      <span class="column-departure__time">@@departure-info.time</span>
+    </div>
+
+    <!-- <div class="column-departure__city">@@departure-info.city</div> -->
+
+    <div class="column-departure__date">
+      @@departure-info.date, @@departure-info.day
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">@@arrival-info.code</span>
+
+      <span class="column-arrival__time">@@arrival-info.time</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">@@arrival-info.city</div> -->
+
+    <div class="column-arrival__date">
+      @@arrival-info.date, @@arrival-info.day
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> @@flight-time </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    @@include('src\components\booking\parts\column-services.html')
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y E</span>
+      <span class="column-class__label">— Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">@@price.adult</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">@@price.child</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>

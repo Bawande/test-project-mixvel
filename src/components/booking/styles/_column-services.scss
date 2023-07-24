@@ -1,0 +1,65 @@
+.column-services {
+  width: 192px;
+  padding-top: 13px;
+
+  &__list {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+
+    padding-right: 5px;
+    overflow: hidden;
+
+    background-color: $grey-11;
+    border-radius: 8px;
+  }
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1;
+
+    &.--additionally {
+      height: 100%;
+      margin-right: 4px;
+      padding: 0 6px;
+
+      color: $white;
+
+      background-color: $border-line;
+      border-radius: 8px;
+    }
+
+    &.--bag {}
+
+    &.--baggage {}
+  }
+
+  &__icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    margin-right: 2px;
+
+    &.--additionally {
+      &>svg {
+        fill: $white;
+      }
+    }
+
+    &.--bag,
+    &.--baggage {
+      &>svg {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__label {}
+}

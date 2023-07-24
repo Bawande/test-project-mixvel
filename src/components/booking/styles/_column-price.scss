@@ -1,0 +1,58 @@
+.column-price {
+
+  &__adult,
+  &__child {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+
+    &>* {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__adult {
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+
+    font-size: 12px;
+
+    border-bottom: 1px dashed $border-line;
+  }
+
+  &__child {
+    font-size: 10px;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__icon {
+    display: block;
+
+    &.--adult,
+    &.--child {
+      width: 14px;
+      height: 14px;
+
+      &>svg {
+        fill: $secondary-color;
+      }
+    }
+
+    &.--info {
+      width: 13px;
+      height: 13px;
+
+      &>svg {
+        fill: $border-line;
+      }
+    }
+  }
+}

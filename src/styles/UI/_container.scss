@@ -1,0 +1,9 @@
+@import "../mixins/container";
+
+.container {
+  @include container(1000px, 60px);
+
+  @media (max-width: 1024px) {
+    @include container(900px, 40px);
+  }
+}

@@ -1,0 +1,58 @@
+.ticket {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+
+  padding-top: 8px;
+
+  overflow: hidden;
+
+  background-color: $grey-4;
+
+  border-radius: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    left: 0;
+    z-index: 2;
+
+    display: block;
+    width: 100%;
+
+    background-color: $grey-8;
+
+    content: "";
+  }
+
+  &::before {
+    top: 0;
+
+    height: 8px;
+  }
+
+  &::after {
+    bottom: 0;
+
+    height: 80px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__side {
+    position: relative;
+    z-index: 3;
+  }
+}

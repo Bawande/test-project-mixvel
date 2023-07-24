@@ -1,0 +1,64 @@
+.column-departure,
+.column-arrival {
+
+  width: 85px;
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  &__icon {
+    position: relative;
+    top: -1px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    & svg {
+      fill: $accent;
+    }
+  }
+
+  &__code {}
+
+  &__time {}
+
+  &__city,
+  &__date {
+    display: block;
+    width: 100%;
+    max-width: 58px;
+    margin-left: auto;
+
+    text-align: end;
+  }
+
+  &__city {
+    margin-bottom: 6px;
+    overflow: hidden;
+
+    color: $accent;
+    font-size: 8px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__date {
+    padding-top: 8px;
+
+    color: $secondary-color;
+    font-size: 10px;
+
+    border-top: 1px dashed $border-line;
+  }
+}

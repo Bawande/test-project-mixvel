@@ -1,0 +1,137 @@
+%passengers-icon {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+}
+
+%passengers-item {
+  display: flex;
+  align-items: center;
+
+  color: $secondary-color;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+
+  &>* {
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.passengers {
+
+  display: flex;
+  width: 100%;
+  height: auto;
+
+  padding: 27px 9px 20px;
+
+  &__total {
+    @extend %passengers-item;
+    position: relative;
+
+    margin-right: 18px;
+
+    &::after {
+      position: absolute;
+
+      top: 0;
+      right: -11px;
+
+      display: block;
+      width: 4px;
+      height: 17px;
+
+      background-image: url("../images/passengers-line.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+
+      content: "";
+    }
+  }
+
+  &__total-icon {
+    @extend %passengers-icon;
+
+    fill: $accent;
+
+    // &.--passengers-old {}
+  }
+
+  &__total-quantity {
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  // &__total-label {}
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    @extend %passengers-item;
+
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item-quantity {
+    position: relative;
+
+    display: block;
+
+    margin-right: 6px;
+    padding: 0 2px 0 3px;
+
+    color: $on-accent;
+
+    font-size: 9px;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -1px;
+      z-index: -1;
+
+      display: block;
+
+      background-color: $accent;
+      border-radius: 6px;
+
+      content: "";
+    }
+  }
+
+  &__item-icon {
+    @extend %passengers-icon;
+
+    fill: $secondary-color;
+
+    // &.--adult {}
+
+    // &.--children {}
+
+    // &.--baby {}
+  }
+
+  &__item-label {
+    &::before {
+      display: inline-block;
+
+      content: "—\00a0";
+    }
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "total": false,
+    "flight": "SU 5642",
+    "carrier": {
+      "path": "./images/carrier-aeroflot.png",
+      "label": "аэрофлот"
+    },
+    "model": "A-319",
+    "flight-time": "8 ч 50 мин",
+    "departure-info": {
+      "code": "OVB",
+      "time": "22:40",
+      "city": "",
+      "date": "26 июн",
+      "day": "сб"
+    },
+    "arrival-info": {
+      "code": "LED",
+      "time": "22:41",
+      "city": "",
+      "date": "27 июн",
+      "day": "вс"
+    },
+    "price": {
+      "adult": "22 000",
+      "child": "11 000"
+    }
+  },
+  {
+    "total": false,
+    "flight": "SU 5642",
+    "carrier": {
+      "path": "./images/carrier-aeroflot.png",
+      "label": "аэрофлот"
+    },
+    "model": "A-319",
+    "flight-time": "8 ч 50 мин",
+    "departure-info": {
+      "code": "OVB",
+      "time": "22:40",
+      "city": "",
+      "date": "26 июн",
+      "day": "сб"
+    },
+    "arrival-info": {
+      "code": "OVB",
+      "time": "22:40",
+      "city": "",
+      "date": "26 июн",
+      "day": "сб"
+    },
+    "price": {
+      "adult": "22 000",
+      "child": "11 000"
+    }
+  },
+  {
+    "total": true,
+    "flight": "SU 5642",
+    "carrier": {
+      "path": "./images/carrier-aeroflot.png",
+      "label": "аэрофлот"
+    },
+    "model": "A-319",
+    "flight-time": "8 ч 50 мин",
+    "departure-info": {
+      "code": "OVB",
+      "time": "22:40",
+      "city": "",
+      "date": "26 июн",
+      "day": "сб"
+    },
+    "arrival-info": {
+      "code": "OVB",
+      "time": "22:40",
+      "city": "",
+      "date": "26 июн",
+      "day": "сб"
+    },
+    "price": {
+      "adult": "22 000",
+      "child": "11 000"
+    }
+  }
+]

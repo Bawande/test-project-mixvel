@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "roboto-v30-cyrillic_latin-500";
+	src:
+		local("roboto-v30-cyrillic_latin-500"),
+		url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2"),
+		url("../fonts/roboto-v30-cyrillic_latin-500.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "roboto-v30-cyrillic_latin-700";
+	src:
+		local("roboto-v30-cyrillic_latin-700"),
+		url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"),
+		url("../fonts/roboto-v30-cyrillic_latin-700.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "roboto-v30-cyrillic_latin-regular";
+	src:
+		local("roboto-v30-cyrillic_latin-regular"),
+		url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"),
+		url("../fonts/roboto-v30-cyrillic_latin-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

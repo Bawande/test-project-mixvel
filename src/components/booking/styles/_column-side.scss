@@ -1,0 +1,64 @@
+.column-side {
+  display: flex;
+  flex-direction: column;
+
+  &__tools {
+    position: relative;
+
+    flex-grow: 1;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 1px;
+
+      background-color: $border-line;
+
+      content: "";
+    }
+  }
+
+  &__total {
+
+    position: relative;
+
+    min-width: 126px;
+    height: 80px;
+    padding-top: 16px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 4px;
+      height: 54px;
+
+      background-image: url("../images/total-line.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+
+      content: "";
+    }
+  }
+
+  &__total-price {
+    display: table;
+    margin: 0 auto;
+
+    padding: 7px 11px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+
+    border: 1px solid $border-line;
+    border-radius: 4px;
+  }
+}
