@@ -1,3 +1,4 @@
+.vscode/
 archive/
 build/
 gulp/
@@ -6,7 +7,7 @@ node_modules/
 gulpfile.babel.js
 package-lock.json
 
-src/components/@Template
-src/components/common
-src/vendor
+src/_generated
+src/_template
+src/temp
 
