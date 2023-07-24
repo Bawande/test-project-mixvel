@@ -1,8 +1,17 @@
 <div class="passengers__total">
   <span class="passengers__total-icon --passengers-old">
+    <!-- prettier-ignore -->
+    @@if (another === false) {
     <svg class="svg-icon-use">
       <use xlink:href="./images/sprite-mono.svg#icon-mono_passengers-old"></use>
     </svg>
+    }
+    <!-- prettier-ignore -->
+    @@if (another === true) {
+    <svg class="svg-icon-use">
+      <use xlink:href="./images/sprite-mono.svg#icon-mono_passengers"></use>
+    </svg>
+    }
   </span>
 
   <span class="passengers__total-quantity">3</span>

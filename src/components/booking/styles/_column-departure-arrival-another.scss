@@ -1,0 +1,21 @@
+.ticket__row.--another {
+
+  .column-departure,
+  .column-arrival {
+    &__description {
+      margin-bottom: 3px;
+    }
+
+    &__icon {}
+
+    &__code {
+      color: $secondary-color;
+    }
+
+    &__time {}
+
+    &__date {
+      padding-top: 5px;
+    }
+  }
+}

@@ -75,7 +75,6 @@
 }
 
 .column-carrier {
-
   display: flex;
   flex-direction: column;
   width: 98px;
@@ -95,13 +94,19 @@
   }
 
   &__model {
-    margin-top: auto;
-    margin-bottom: 8px;
+    position: absolute;
+    top: 48px;
+    left: 5px;
+
+    display: block;
 
     font-size: 10px;
   }
 
   &__docking {
+    margin-top: auto;
+    padding-right: 2px;
+
     color: $accent;
     font-size: 7px;
     text-align: end;
@@ -137,6 +142,7 @@
 
 .column-class {
   width: 143px;
+  padding-top: 12px;
 
   &__wrapper {
     display: inline-flex;

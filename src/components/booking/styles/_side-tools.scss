@@ -1,0 +1,41 @@
+.side-tools {
+  text-align: end;
+  padding: 10px 13px;
+
+  &__list {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    & svg {
+      fill: $border-line;
+
+      transition: fill 0.3s ease;
+    }
+
+    & svg:hover {
+      fill: $accent;
+    }
+
+    &.--share {}
+
+    &.--info {}
+  }
+}

@@ -1,0 +1,12 @@
+.ticket.--another {
+  background-color: $background;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 8%);
+
+  &::before {
+    background-color: $accent;
+  }
+
+  &::after {
+    background-color: $grey-7;
+  }
+}

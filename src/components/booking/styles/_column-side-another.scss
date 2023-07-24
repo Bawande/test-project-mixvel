@@ -1,0 +1,27 @@
+.column-side {
+  position: relative;
+
+  &__tools.--another {
+    &::after {
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 8px;
+
+      top: -8px;
+      left: 0;
+
+      background-image: url("../images/icon-top-row.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      content: "";
+    }
+  }
+
+  &__tools.--back.--another {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

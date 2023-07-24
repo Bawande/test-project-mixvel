@@ -1,0 +1,14 @@
+.ticket__row.--another {
+
+  .column-services {
+    &__list {
+      background-color: $grey-4;
+    }
+
+    &__item {
+      &.--additionally {
+        background-color: $border-line;
+      }
+    }
+  }
+}

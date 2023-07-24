@@ -1,9 +1,12 @@
 <div class="container booking">
   <div class="booking__passengers passengers">
-    @@include('src\components\booking\parts\passengers.html')
+    <!-- prettier-ignore -->
+    @@include('src\components\booking\parts\passengers.html', {"another": false})
   </div>
   <div class="booking__tickets-list">
-    @@include('src\components\booking\parts\ticket.html', {"type": "there"})
-    @@include('src\components\booking\parts\ticket.html', {"type": "back"})
+    <!-- prettier-ignore -->
+    @@include('src\components\booking\parts\ticket.html', {"type": "there", "another": false})
+    <!-- prettier-ignore -->
+    @@include('src\components\booking\parts\ticket.html', {"type": "back", "another": false})
   </div>
 </div>

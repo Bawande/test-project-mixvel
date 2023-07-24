@@ -1,17 +1,27 @@
-<article class="ticket --@@type">
-  <div class="ticket__content">
+<article class="ticket --@@type @@if ( another === true ) {--another}">
+  <div class="ticket__content @@if ( another === true ) {--another}">
     <!-- prettier-ignore -->
     @@if (type === 'there') {
-      @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-there.json")
+      @@if ( another === true ) {
+        @@loop('src\components\booking\parts\ticket-row-another.html', "components\booking\data\data-there.json")
+      }
+      @@if ( another === false ) {
+        @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-there.json")
+      }
     }
 
     <!-- prettier-ignore -->
     @@if (type === 'back') {
-      @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-back.json")
+      @@if ( another === true ) {
+        @@loop('src\components\booking\parts\ticket-row-another.html', "components\booking\data\data-back.json")
+      }
+      @@if ( another === false ) {
+        @@loop('src\components\booking\parts\ticket-row.html', "components\booking\data\data-back.json")
+      }
     }
   </div>
-  <div class="ticket__side column-side">
+  <div class="ticket__side column-side @@if ( another === true ) {--another}">
     <!-- prettier-ignore -->
-    @@include('src\components\booking\parts\column-side.html')
+    @@include('src\components\booking\parts\column-side.html', {"type": "@@type", "another": @@another})
   </div>
 </article>

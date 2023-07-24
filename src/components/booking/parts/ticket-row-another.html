@@ -1,4 +1,4 @@
-<div class="ticket__row @@if ( total === true ) { --last }">
+<div class="ticket__row @@if ( total === true ) { --last } --another">
   <div class="ticket__column column-flight">
     <div class="column-flight__number">@@flight</div>
   </div>
@@ -34,7 +34,7 @@
       <span class="column-departure__time">@@departure-info.time</span>
     </div>
 
-    <!-- <div class="column-departure__city">@@departure-info.city</div> -->
+    <div class="column-departure__city">@@departure-info.city</div>
 
     <div class="column-departure__date">
       @@departure-info.date, @@departure-info.day
@@ -56,7 +56,7 @@
       <span class="column-arrival__time">@@arrival-info.time</span>
     </div>
 
-    <!-- <div class="column-arrival__city">@@arrival-info.city</div> -->
+    <div class="column-arrival__city">@@arrival-info.city</div>
 
     <div class="column-arrival__date">
       @@arrival-info.date, @@arrival-info.day
@@ -69,7 +69,7 @@
 
   <div class="ticket__column column-services">
     <!-- prettier-ignore -->
-    @@include('src\components\booking\parts\column-services.html', {"another": false})
+    @@include('src\components\booking\parts\column-services.html', {"another": true})
   </div>
 
   <div class="ticket__column column-number">
@@ -85,7 +85,7 @@
 
   <div class="ticket__column column-price">
     <div class="column-price__adult">
-      <span class="column-price__text">@@price.adult</span>
+      <span class="column-price__text">@@price.adult ₽</span>
 
       <span class="column-price__icon --adult">
         <svg class="svg-icon-use">
@@ -103,7 +103,7 @@
     </div>
 
     <div class="column-price__child">
-      <span class="column-price__text">@@price.child</span>
+      <span class="column-price__text">@@price.child ₽</span>
 
       <span class="column-price__icon --child">
         <svg class="svg-icon-use">

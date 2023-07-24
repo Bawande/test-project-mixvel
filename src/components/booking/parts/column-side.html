@@ -1,4 +1,30 @@
-<div class="column-side__tools"></div>
+<div
+  class="column-side__tools side-tools --@@type @@if ( another === true ) {--another}"
+>
+  <!-- prettier-ignore -->
+  @@if (another === true) {
+  <ul class="side-tools__list">
+    <li class="side-tools__item">
+      <div class="side-tools__button">
+        <span class="side-tools__icon --share">
+          <svg class="svg-icon-use">
+            <use xlink:href="./images/sprite-mono.svg#icon-mono_share"></use>
+          </svg>
+        </span>
+      </div>
+    </li>
+    <li class="side-tools__item">
+      <div class="side-tools__button">
+        <span class="side-tools__icon --info">
+          <svg class="svg-icon-use">
+            <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+          </svg>
+        </span>
+      </div>
+    </li>
+  </ul>
+  }
+</div>
 <div class="column-side__total">
   <div class="column-side__total-price">
     <span>66 000 ₽</span>

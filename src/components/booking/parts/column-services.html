@@ -1,11 +1,22 @@
 <div class="column-services__list">
   <div class="column-services__item --additionally">
     <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+      @@if ( another === true ) {
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting"
+        ></use>
+      </svg>
+      }
+      <!-- prettier-ignore -->
+      @@if ( another === false ) {
       <svg class="svg-icon-use">
         <use
           xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
         ></use>
       </svg>
+      }
     </span>
 
     <span class="column-services__label">16 услуг...</span>

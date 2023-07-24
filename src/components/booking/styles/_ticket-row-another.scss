@@ -1,0 +1,53 @@
+@import "./column-departure-arrival-another";
+@import "./column-services-another";
+@import "./column-price";
+
+.ticket__row.--another {
+  .column-carrier {
+
+    &__brand {}
+
+    &__model {}
+
+    &__docking {}
+  }
+
+  // @import "./column-departure-arrival";
+
+  .column-info {
+    width: 76px;
+
+    &__flight-time {
+      &::before {
+        position: relative;
+        top: 1px;
+
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+
+        background-image: url("../images/icon_time.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+
+        content: "";
+      }
+    }
+  }
+
+  // @import "./column-services";
+
+  .column-number {
+    &__text {}
+  }
+
+  .column-class {
+
+    &__wrapper {
+      background-color: $grey-4;
+    }
+  }
+
+  // @import "./column-price";
+}

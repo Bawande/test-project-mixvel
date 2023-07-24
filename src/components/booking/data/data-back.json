@@ -11,14 +11,14 @@
     "departure-info": {
       "code": "OVB",
       "time": "22:40",
-      "city": "",
+      "city": "Москва",
       "date": "26 июн",
       "day": "сб"
     },
     "arrival-info": {
       "code": "LED",
       "time": "22:41",
-      "city": "",
+      "city": "Санкт-Петербург",
       "date": "27 июн",
       "day": "вс"
     },
@@ -39,14 +39,14 @@
     "departure-info": {
       "code": "OVB",
       "time": "22:40",
-      "city": "",
+      "city": "Москва",
       "date": "26 июн",
       "day": "сб"
     },
     "arrival-info": {
       "code": "OVB",
       "time": "22:40",
-      "city": "",
+      "city": "Санкт-Петербург",
       "date": "26 июн",
       "day": "сб"
     },
@@ -67,14 +67,14 @@
     "departure-info": {
       "code": "OVB",
       "time": "22:40",
-      "city": "",
+      "city": "Москва",
       "date": "26 июн",
       "day": "сб"
     },
     "arrival-info": {
       "code": "OVB",
       "time": "22:40",
-      "city": "",
+      "city": "Санкт-Петербург",
       "date": "26 июн",
       "day": "сб"
     },
