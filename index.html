@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- <head> -->
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>starter Gulp</title>
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="./styles/styles.min.css" />
+</head>
+
+  <!-- </head> -->
+
+  <body>
+    <header class="header">
+  <div class="header__container">
+    <button class="header__mobile-menu">
+      <img src="./images/three-lines.svg" alt="меню навигации" />
+    </button>
+    <a href="#" class="header__logo"
+      ><img src="./images/new-mixvel-logo.svg" alt="логотип MIXVEL"
+    /></a>
+    <div class="header__user-panel">
+      <a href="#" class="header__account"
+        ><img src="./images/account.svg" alt="account"
+      /></a>
+    </div>
+  </div>
+</header>
+
+    <main class="main"><div class="container booking">
+  <div class="booking__passengers passengers">
+    <!-- prettier-ignore -->
+    <div class="passengers__total">
+  <span class="passengers__total-icon --passengers-old">
+    <!-- prettier-ignore -->
+
+    <svg class="svg-icon-use">
+      <use xlink:href="./images/sprite-mono.svg#icon-mono_passengers-old"></use>
+    </svg>
+
+    <!-- prettier-ignore -->
+
+  </span>
+
+  <span class="passengers__total-quantity">3</span>
+
+  <span class="passengers__total-label">Пассажира</span>
+</div>
+
+<ul class="passengers__list">
+  <li class="passengers__item">
+    <span class="passengers__item-quantity">1</span>
+
+    <span class="passengers__item-icon --adult">
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+        ></use>
+      </svg>
+    </span>
+
+    <span class="passengers__item-label">Взрослый</span>
+  </li>
+
+  <li class="passengers__item">
+    <span class="passengers__item-quantity">1</span>
+
+    <span class="passengers__item-icon --children">
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+        ></use>
+      </svg>
+    </span>
+
+    <span class="passengers__item-label">Ребенок</span>
+  </li>
+
+  <li class="passengers__item">
+    <span class="passengers__item-quantity">1</span>
+
+    <span class="passengers__item-icon --baby">
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_children-baby"
+        ></use>
+      </svg>
+    </span>
+
+    <span class="passengers__item-label">Младенец</span>
+  </li>
+</ul>
+
+  </div>
+  <div class="booking__tickets-list">
+    <!-- prettier-ignore -->
+    <article class="ticket --there ">
+  <div class="ticket__content ">
+    <!-- prettier-ignore -->
+
+        <div class="ticket__row ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+    <div class="column-carrier__docking">
+      Стыковка
+      <span>8 ч&#160;50 мин</span>
+    </div>
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">LED</span>
+
+      <span class="column-arrival__time">22:41</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      27&#160;июн, вс
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="ticket__row ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+    <div class="column-carrier__docking">
+      Стыковка
+      <span>8 ч&#160;50 мин</span>
+    </div>
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">OVB</span>
+
+      <span class="column-arrival__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="ticket__row  --last ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">OVB</span>
+
+      <span class="column-arrival__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+
+    <!-- prettier-ignore -->
+
+  </div>
+  <div class="ticket__side column-side ">
+    <!-- prettier-ignore -->
+    <div
+  class="column-side__tools side-tools --there "
+>
+  <!-- prettier-ignore -->
+
+</div>
+<div class="column-side__total">
+  <div class="column-side__total-price">
+    <span>66 000 ₽</span>
+  </div>
+</div>
+
+  </div>
+</article>
+
+    <!-- prettier-ignore -->
+    <article class="ticket --back ">
+  <div class="ticket__content ">
+    <!-- prettier-ignore -->
+
+    <!-- prettier-ignore -->
+
+        <div class="ticket__row ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+    <div class="column-carrier__docking">
+      Стыковка
+      <span>8 ч&#160;50 мин</span>
+    </div>
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">LED</span>
+
+      <span class="column-arrival__time">22:41</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      27&#160;июн, вс
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="ticket__row ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+    <div class="column-carrier__docking">
+      Стыковка
+      <span>8 ч&#160;50 мин</span>
+    </div>
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">OVB</span>
+
+      <span class="column-arrival__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="ticket__row  --last ">
+  <div class="ticket__column column-flight">
+    <div class="column-flight__number">SU&#160;5642</div>
+  </div>
+
+  <div class="ticket__column column-carrier">
+    <div class="column-carrier__brand">
+      <picture><source srcset="./images/carrier-aeroflot.webp" type="image/webp"><img src="./images/carrier-aeroflot.png" alt="аэрофлот" /></picture>
+    </div>
+
+    <div class="column-carrier__model">A-319</div>
+
+    <!-- prettier-ignore -->
+
+  </div>
+
+  <div class="ticket__column column-departure">
+    <div class="column-departure__description">
+      <span class="column-departure__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-takeoff"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-departure__code">OVB</span>
+
+      <span class="column-departure__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-departure__city">Москва</div> -->
+
+    <div class="column-departure__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-arrival">
+    <div class="column-arrival__description">
+      <span class="column-arrival__icon">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_flight-land"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-arrival__code">OVB</span>
+
+      <span class="column-arrival__time">22:40</span>
+    </div>
+
+    <!-- <div class="column-arrival__city">Санкт-Петербург</div> -->
+
+    <div class="column-arrival__date">
+      26&#160;июн, сб
+    </div>
+  </div>
+
+  <div class="ticket__column column-info">
+    <span class="column-info__flight-time"> 8 ч&#160;50 мин </span>
+  </div>
+
+  <div class="ticket__column column-services">
+    <!-- prettier-ignore -->
+    <div class="column-services__list">
+  <div class="column-services__item --additionally">
+    <span class="column-services__icon --additionally">
+      <!-- prettier-ignore -->
+
+      <!-- prettier-ignore -->
+
+      <svg class="svg-icon-use">
+        <use
+          xlink:href="./images/sprite-mono.svg#icon-mono_services-setting-old"
+        ></use>
+      </svg>
+
+    </span>
+
+    <span class="column-services__label">16 услуг&#8230;</span>
+  </div>
+
+  <div class="column-services__item --bag">
+    <span class="column-services__icon --bag">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_bag"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">10кг</span>
+  </div>
+
+  <div class="column-services__item --baggage">
+    <span class="column-services__icon --baggage">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_baggage"></use>
+      </svg>
+    </span>
+
+    <span class="column-services__label">23кг</span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="ticket__column column-number">
+    <span class="column-number__text">N9</span>
+  </div>
+
+  <div class="ticket__column column-class">
+    <div class="column-class__wrapper">
+      <span class="column-class__code">Y&#160;E</span>
+      <span class="column-class__label">&#8212;&#160;Эконом Премиум</span>
+    </div>
+  </div>
+
+  <div class="ticket__column column-price">
+    <div class="column-price__adult">
+      <span class="column-price__text">22 000</span>
+
+      <span class="column-price__icon --adult">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-adult"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+
+    <div class="column-price__child">
+      <span class="column-price__text">11 000</span>
+
+      <span class="column-price__icon --child">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_passengers-children"
+          ></use>
+        </svg>
+      </span>
+
+      <span class="column-price__icon --info">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_info"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="ticket__side column-side ">
+    <!-- prettier-ignore -->
+    <div
+  class="column-side__tools side-tools --back "
+>
+  <!-- prettier-ignore -->
+
+</div>
+<div class="column-side__total">
+  <div class="column-side__total-price">
+    <span>66 000 ₽</span>
+  </div>
+</div>
+
+  </div>
+</article>
+
+  </div>
+</div>
+</main>
+
+    <footer class="footer">
+  <div class="footer__container container"></div>
+</footer>
+
+    <!-- <script> -->
+
+    <!-- </script> -->
+  </body>
+</html>
